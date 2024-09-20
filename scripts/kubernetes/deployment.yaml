@@ -23,7 +23,7 @@ spec:
         - name: PORT
           value: "4001"
         - name: DATABASE_URL
-          value: postgresql://task92_user:6uLQ356fLuidHkU8cZfmb021dYctL9Uu@dpg-crmkln08fa8c73akaofg-a.oregon-postgres.render.com/task92
+          value: $DATABASE_URL
 ---
 apiVersion: v1
 kind: Service
@@ -66,7 +66,7 @@ spec:
         - name: PORT
           value: "5001"
         - name: DATABASE_URL
-          value: postgresql://task92_user:6uLQ356fLuidHkU8cZfmb021dYctL9Uu@dpg-crmkln08fa8c73akaofg-a.oregon-postgres.render.com/task92
+          value: $DATABASE_URL
 ---
 apiVersion: v1
 kind: Service
