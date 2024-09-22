@@ -11,7 +11,7 @@ services:
      - "4000:4001"
     environment:
       - PORT=4001
-      - DATABASE_URL=$DATABASE_URL
+      - DATABASE_URL=postgresql://task92_user:6uLQ356fLuidHkU8cZfmb021dYctL9Uu@dpg-crmkln08fa8c73akaofg-a.oregon-postgres.render.com/task92
     restart: "no"
 
   inventory_management:
@@ -24,5 +24,5 @@ services:
      - "5000:5001"
     environment:
       - PORT=5001
-      - DATABASE_URL=$DATABASE_URL
+      - DATABASE_URL=postgresql://task92_user:6uLQ356fLuidHkU8cZfmb021dYctL9Uu@dpg-crmkln08fa8c73akaofg-a.oregon-postgres.render.com/task92
     restart: "no"

@@ -15,6 +15,7 @@ def get_db():
     finally:
         db.close()
 
+
 @app.post("/books/", response_model=schemas.Book)
 def create_book(book: schemas.BookCreate, db: Session = Depends(get_db)):
     return crud.create_book(db=db, book=book)
