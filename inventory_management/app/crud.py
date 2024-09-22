@@ -8,9 +8,6 @@ def get_inventories(db: Session, skip: int = 0, limit: int = 10):
     return db.query(models.Inventory).offset(skip).limit(limit).all()
 
 
-
-
-
 def create_inventory(db: Session, inventory: schemas.InventoryCreate):
     db_inventory = models.Inventory(**inventory.dict())
     db.add(db_inventory)
