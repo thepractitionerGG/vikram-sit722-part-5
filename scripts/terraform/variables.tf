@@ -1,5 +1,5 @@
 variable "app_name" {
-  default = "vikramtask92"
+  default = "vikramtask921"
 }
 
 variable "location" {
